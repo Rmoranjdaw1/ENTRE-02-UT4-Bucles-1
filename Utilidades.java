@@ -3,7 +3,7 @@ import java.util.Scanner;
  *   Clase de utilidades
  *   Incluye métodos estáticos
  *   
- *   @author - 
+ *   @Roberto Moran - 
  */
 public class Utilidades
 {
@@ -17,7 +17,19 @@ public class Utilidades
      * (usa bucles while)
      */
     public static boolean estaEnOctal(int n) {
-         
+          
+        if(n %2 <= 0)
+        {
+            while(n >=0){
+            while(n >= 7)
+            {
+                 return true;
+                
+            }
+            }
+        }else{
+        return false;
+        }
         return true;
 
     }
@@ -29,7 +41,11 @@ public class Utilidades
      * (usa bucles while)
      */
     public static int contarCifras(int n) {
-         
+        while(n != 0)
+        {
+        n = n / 10;
+        int cifra = n% 10;
+        }
         return 0;
 
     }
